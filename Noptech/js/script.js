@@ -27,9 +27,9 @@ $(document).ready(function() {
 
 
 var setSlideHeights = function(){
-  $('#slide-1').css('height',window.innerHeight);
-  $('#slide-2').css('height',window.innerHeight);
-  $('#slide-3').css('height',window.innerHeight);
+  $('#slide-1').css('min-height',window.innerHeight);
+  $('#slide-2').css('min-height',window.innerHeight);
+  $('#slide-3').css('min-height',window.innerHeight);
 };
 $(window).resize(setSlideHeights);
 $(document).ready(setSlideHeights);

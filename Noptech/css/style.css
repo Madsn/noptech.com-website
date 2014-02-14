@@ -378,6 +378,10 @@ body {
 	.content-row h4 {
 		font-size: 20px;
 	}
+
+  .margin-top {
+    padding-top: 100px;
+  }
 }
 
 #slide-3 {
@@ -388,23 +392,10 @@ body {
   text-align: left;
 }
 
-#footerwrap {
-	background-color: #2f2f2f;
-	color: white;
-	padding-top: 40px;
-	padding-bottom: 60px;
-	text-align: left;
+.spacer {
+  height: 40px;
 }
 
-#footerwrap h3 {
-	font-size: 28px;
-	color: white;
-}
-
-#footerwrap p {
-	color: white;
-	font-size: 18px;
-}
 @media (max-width: 767px) {
 	#slide-3 {
 		background-image: none;
