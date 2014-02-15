@@ -118,22 +118,35 @@
 			<div class="col-lg-7">
 				<h3 class="title-row">Drop Us A Line</h3>
 				<br>
-				<form role="form" action="#" method="post" enctype="plain">
-				  <div class="form-group">
-				    <label for="name1">Your Name</label>
-				    <input type="name" name="Name" class="form-control" id="name1" placeholder="Your Name">
-				  </div>
-				  <div class="form-group">
-				    <label for="email1">Email address</label>
-				    <input type="email" name="Mail" class="form-control" id="email1" placeholder="Enter email">
-				  </div>
-				  <div class="form-group">
-				  	<label>Your Text</label>
-				  	<textarea class="form-control" name="Message" rows="3"></textarea>
-				  </div>
-				  <br>
-				  <button type="submit" class="btn btn-large btn-info">SUBMIT</button>
-				</form>
+                <?php
+                    if(isset($_GET['msg'])){
+                        echo "<div class=row line-row>";
+                        echo "<h4 class='col-12 font-thin'>".$_GET['msg']."</h4>";
+                        echo "</div>";
+                        echo "<br>";
+                    }else{
+                        echo '
+                        <form role="form" action="mailsender.php" method="post" enctype="plain">
+                        <fieldset>
+                          <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="name" name="name" class="form-control" id="name" placeholder="Your Name">
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
+                          </div>
+                          <div class="form-group">
+                            <label>Your Text</label>
+                            <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                          </div>
+                          <br>
+                          <button type="submit" name="submit" class="btn btn-large btn-info">SUBMIT</button>
+                        </fieldset>
+                        </form>
+                        ';
+                    }
+                ?>
 			</div>
 		</div>
 	</div><!-- /Slide 3 -->
