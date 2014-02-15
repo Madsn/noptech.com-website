@@ -145,7 +145,7 @@ function menu_focus( element, i ) {
 
 	enable_arrows( i );
 
-	if ( i == 1 || i == 3 )
+	if ( i == 2 )
 		$('.navbar').removeClass('inv');
 	else
 		$('.navbar').addClass('inv');
@@ -335,17 +335,24 @@ jQuery(document).ready(function ($) {
 });
 
 $(document).keydown(function(e){
-  var datasheet = $('.nav > li.active').data('slide');
-  var offset_top = false;
-  if (e.keyCode == 38) {
-    offset_top = ( datasheet - 1 == 1 ) ? '0px' : $('.slide[data-slide="' + (datasheet-1) + '"]').offset().top;
-  }else if (e.keyCode == 40){
-    offset_top = $('.slide[data-slide="' + (datasheet+1) + '"]').offset().top;
+  var cursor_in_field = false;
+  $('.form-control').each(function( index ) {
+    if($( this ).is(':focus'))
+      cursor_in_field = true;
+  });
+  if(!cursor_in_field){
+    var datasheet = $('.nav > li.active').data('slide');
+    var offset_top = false;
+    if (e.keyCode == 38 || e.keyCode == 107) {  // up
+      offset_top = ( datasheet - 1 == 1 ) ? '0px' : $('.slide[data-slide="' + (datasheet-1) + '"]').offset().top;
+    }else if (e.keyCode == 40 || e.keyCode == 106){ // down
+      offset_top = $('.slide[data-slide="' + (datasheet+1) + '"]').offset().top;
+    }
+    if ( offset_top != false ) {
+      htmlbody.stop(false, false).animate({
+        scrollTop: offset_top
+      }, 1500, 'easeInOutQuart');
+      return false;
+    }
   }
-  if ( offset_top != false ) {
-    htmlbody.stop(false, false).animate({
-      scrollTop: offset_top
-    }, 1500, 'easeInOutQuart');
-  }
-  return false;
 });
