@@ -206,7 +206,8 @@ body {
 }
 
 #slide-1 {
-	background-image: url('../images/bg-large.jpg');
+	background-image: url('../images/heartbeat_full_opt.jpg');
+  background-color: black;
 	color: #ffffff;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -236,7 +237,7 @@ body {
 
 @media (max-width: 767px) {
 	#slide-1 {
-		background-image: url('../images/bg-small.jpg');
+		background-image: none;
 	}
 }
 

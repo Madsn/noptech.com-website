@@ -83,13 +83,13 @@
 					<p><i class="icon icon-gears"></i></p>
 					<h2 class="font-thin">Nikolaj <span class="font-semibold">Røndbjerg</span></h2>
                     <h4 class="font-thin">Data/Electronics Engineer</h4>
-                    <h4 class="font-thin">Favorite tools: Reprap 3d printer, CNC laser, Arduino microcontrollers</h4>
+                    <h4 class="font-thin"><span class="font-semibold">Areas of expertise:</span><br>3d printing, laser etching/cutting, hardware modules, mechatronic systems, embedded systems and graphics.</h4>
 				</div><!-- /col12 -->
 				<div class="col-12 col-lg-6 col-sm-6">
 					<p><i class="icon icon-laptop"></i></p>
 					<h2 class="font-thin">Mikkel <span class="font-semibold">Madsen</span></h2>
                     <h4 class="font-thin">Software Engineer</h4>
-					<h4 class="font-thin">Favorite tools: Python or Ruby (and an IDE with Vim keybindings)</h4>
+					<h4 class="font-thin"><span class="font-semibold">Areas of expertise:</span><br>backend applications, mobile app development, server maintenance, hosting and web design.</h4>
 				</div><!-- /col12 -->
 			</div><!-- /row -->
             <div class="spacer">
@@ -100,7 +100,9 @@
             </div><!-- /row -->
 			<div class="row content-row">
                 <div class="row line-row">
-                    <h4 class="col-12 font-thin">Between us, we have the <span class="font-semibold">expertise</span> to assist you in most matters regarding 3d printing, laser etching/cutting, hardware, software and anything in between</h4>
+                    <h4 class="col-12 font-thin">Between us, we have the <span class="font-semibold">expertise</span> to assist you in wide range of projects.
+                    <a href="#slide-3">Get in touch</a> so we can discuss how <span class="font-semibold">Noptech</span> can help <span class="font-semibold">you</span>
+                    bring your ideas to life.</h4>
                 </div>
             </div><!-- /row -->
 		</div><!-- /container -->
@@ -159,7 +161,7 @@
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
-	<script src="http://code.jquery.com/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
 	<script src="js/script.js"></script>
 
