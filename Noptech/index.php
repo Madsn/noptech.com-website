@@ -108,7 +108,7 @@
 
 
 	<!-- === Slide 3 / Contact === -->
-	<div class="slide story" id="slide-3" data-slide="3">
+	<div class="slide story" id="slide-3" name="contact" data-slide="3">
 		<div class="container">
 			<div class="col-lg-5">
 				<p>
@@ -121,7 +121,7 @@
                 <?php
                     if(isset($_GET['msg'])){
                         echo "<div class=row line-row>";
-                        echo "<h4 class='col-12 font-thin'>".$_GET['msg']."</h4>";
+                        echo "<h4 style='font-weight: bold' class='col-12 font-thin'>".$_GET['msg']."</h4>";
                         echo "</div>";
                         echo "<br>";
                     }else{
@@ -157,10 +157,11 @@
 	<script src="js/html5shiv.js"></script>
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/jquery-migrate-1.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<!--<script src="js/bootstrap.min.js"></script>-->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
 	<script src="js/script.js"></script>
+    <script src="email/validation.js"></script>
 
 	<!-- fancybox init -->
 	<script>

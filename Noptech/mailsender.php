@@ -1,8 +1,8 @@
 <?php
-$name = "Mikkel";//$_POST['name'];
-$email = "m@madsn.net";//$_POST['email'];
-$query = 'hello, test';//$_POST['message'];
-$email_from = 'Mikkel <m@madsn.net>';//$name.'<'.$email.'>';
+$name = $_POST['name'];
+$email = $_POST['email'];
+$query = $_POST['message'];
+$email_from = $name.'<'.$email.'>';
 
 $to="m@madsn.net";
 $subject="Enquiry!";
@@ -22,8 +22,8 @@ $message="
 
 ";
 if(mail($to,$subject,$message,$headers))
-    header("Location:index.php?msg=Thank you for contacting us, you should hear back within a day or two.");
+    header("Location:index.php?msg=Thank you for contacting us, you should hear back within a day or two.#slide-3");
 else
-    header("Location:index.php?msg=We're sorry, the contact form was unable to fulfil your request. Please contact us by mail instead: <a href='mailto:mail@noptech.com'>mail@noptech.com</a>.");
+    header("Location:index.php?msg=We're sorry, the contact form was unable to fulfil your request. Please contact us by mail instead: <a href='mailto:mail@noptech.com'>mail@noptech.com</a>.#slide-3");
     //contact:-your-email@your-domain.com
 ?>
