@@ -1,4 +1,5 @@
 <IfModule mod_expires.c>
 ExpiresActive On
 ExpiresDefault "access plus 1 day"
+ExpiresByType text/php "access plus 5 minutes"
 </IfModule>
