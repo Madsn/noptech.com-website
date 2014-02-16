@@ -126,7 +126,7 @@
                         echo "<br>";
                     }else{
                         echo '
-                        <form role="form" action="mailsender.php" method="post" enctype="plain">
+                        <form name="enq" class="form-horizontal" action="mailsender.php" method="post" onsubmit="return validation();">
                         <fieldset>
                           <div class="form-group">
                             <label for="name">Your Name</label>
@@ -140,8 +140,9 @@
                             <label>Your Text</label>
                             <textarea class="form-control" name="message" id="message" rows="3"></textarea>
                           </div>
-                          <br>
-                          <button type="submit" name="submit" class="btn btn-large btn-info">SUBMIT</button>
+                          <div class="form-group">
+                              <input type="submit" name="submit" title="submit"/>
+                          </div>
                         </fieldset>
                         </form>
                         ';
@@ -155,13 +156,12 @@
 
 	<!-- SCRIPTS -->
 	<script src="js/html5shiv.js"></script>
-	<script src="js/jquery-1.10.2.min.js"></script>
-	<script src="js/jquery-migrate-1.2.1.min.js"></script>
-	<!--<script src="js/bootstrap.min.js"></script>-->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="http://code.jquery.com/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
 	<script src="js/script.js"></script>
-    <script src="email/validation.js"></script>
 
 	<!-- fancybox init -->
 	<script>
