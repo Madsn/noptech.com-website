@@ -190,7 +190,7 @@ function menu_focus( element, i ) {
 
 	enable_arrows( i );
 
-	if ( i == 2 )
+	if ( i == 1 || i == 2 )
 		$('.navbar').removeClass('inv');
 	else
 		$('.navbar').addClass('inv');
